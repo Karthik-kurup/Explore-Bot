@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreBot - Your Travel Companion</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Screen with Logo -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-content">
+      <img src="/images/explorebot-logo.png" alt="ExploreBot Logo" class="loading-logo">
+      <div class="loading-text">
+        <h1>ExploreBot</h1>
+        <p>Your Travel Companion in a Chatbox</p>
+      </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar" id="loading-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main App Container -->
+  <div class="app-container" id="app-container">
+    <!-- Sidebar with Logo -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="/images/explorebot-logo.png" alt="ExploreBot Logo" class="sidebar-logo">
+        <div class="logo-text">
+          <div class="logo-main">ExploreBot</div>
+          <div class="logo-sub">Your Travel Companion</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#" class="active"><i class="icon">💬</i> Chat</a>
+        <a href="#"><i class="icon">📌</i> Saved</a>
+        <a href="#"><i class="icon">🕒</i> History</a>
+        <a href="#"><i class="icon">⚙️</i> Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Chat Section -->
+    <main class="chat-section">
+      <header>
+        <div class="header-content">
+          <h1>Travel Guide</h1>
+          <button class="btn-new-chat" onclick="newChat()">+ New Chat</button>
+        </div>
+      </header>
+      
+      <div class="chat-window" id="chat-window">
+        <div class="welcome-message">
+          <h2>Welcome to ExploreBot! 🌍</h2>
+          <p>Ask me about places to visit, things to do, or travel tips for any destination.</p>
+          <div class="quick-suggestions">
+            <button class="quick-suggestion" onclick="quickSuggestion('Paris, Family-friendly')">Paris family trips</button>
+            <button class="quick-suggestion" onclick="quickSuggestion('Tokyo, Adventure')">Tokyo adventures</button>
+            <button class="quick-suggestion" onclick="quickSuggestion('New York, Budget')">NYC on a budget</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="location" placeholder="Where would you like to explore today?">
+        <select id="filter">
+          <option value="Family-friendly">👨‍👩‍👧‍👦 Family</option>
+          <option value="Adventure">🧗 Adventure</option>
+          <option value="Romantic">💑 Romantic</option>
+          <option value="Budget">💰 Budget</option>
+          <option value="Luxury">✨ Luxury</option>
+        </select>
+        <button class="send-btn" onclick="sendMessage()">
+          <span class="send-text">Explore</span>
+          <span class="send-icon">✈️</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
