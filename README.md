@@ -53,8 +53,12 @@ Access the chatbot at: http://localhost:3001
 ```
 explore-bot/
 │
-├── public/         # HTML, CSS, and client-side JS
-│   └── report.html # Main chatbot UI
+├── public/
+|   └── images/
+|       └── explorebot-logo.png    #logo
+│   └── index.html                 # HTML File
+|   └── script.js                  #client-side JS
+|   └── style.css                  #stylesheet
 ├── .env            # Environment configuration
 ├── server.js       # Express backend
 ├── package.json    # Project metadata and dependencies
@@ -62,8 +66,16 @@ explore-bot/
 ```
 📸 UI Preview
 
+![Explore Bot Load](https://raw.githubusercontent.com/Karthik-kurup/Explore-Bot/master/preview_img/IMG1.png)
+![Explore Bot UI](preview_img/IMG2.png)
+![Explore Bot UI](preview_img/IMG3.png)
+![Explore Bot UI](preview_img/IMG4.png)
+![Explore Bot Logo](preview_img/Logo.png)
 
 🙌 Contributions Welcome!
 Pull requests are welcome. Feel free to fork the repo and submit improvements!
 
-
+📧 Contact
+Made with 💙 by Karthik Kurup
+Vishwakarma University
+Email: kurupkarthik24@gmail.com
