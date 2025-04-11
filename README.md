@@ -27,7 +27,7 @@ Explore Bot is a smart travel companion powered by **Gemini API** that suggests 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/explore-bot.git
+git clone https://github.com/Karthik-kurup/Explore-Bot.git
 cd explore-bot
 ```
 
