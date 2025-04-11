@@ -38,9 +38,11 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-```
+
 Create a .env file in the root directory and add:
+```
 GEMINI_API_KEY=your_google_gemini_api_key
+PORT=3001
 ```
 
 ### 4. Run the Server
