@@ -29,24 +29,28 @@ Explore Bot is a smart travel companion powered by **Gemini API** that suggests 
 ```bash
 git clone https://github.com/YOUR_USERNAME/explore-bot.git
 cd explore-bot
+```
 
 ### 2. Install Dependencies
-bash
-Copy
-Edit
+
+```bash
 npm install
+```
 
 ### 3. Configure Environment Variables
+```
 Create a .env file in the root directory and add:
 GEMINI_API_KEY=your_google_gemini_api_key
+```
 
 ### 4. Run the Server
-
+```
 node server.js
+```
 Access the chatbot at: http://localhost:3001
 
 📁 Folder Structure
-
+```
 explore-bot/
 │
 ├── public/         # HTML, CSS, and client-side JS
@@ -55,7 +59,7 @@ explore-bot/
 ├── server.js       # Express backend
 ├── package.json    # Project metadata and dependencies
 └── README.md       # Project overview and instructions
-
+```
 📸 UI Preview
 
 
